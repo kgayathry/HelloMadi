@@ -1,13 +1,92 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  color: #1e3fb5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p {
+  padding: 0;
+}
+
+.bg-gray {
+  background: #aeaeae;
+}
+
+.product {
+  display: flex;
+}
+
+.product-img {
+  text-align: center;
+}
+
+.product-desc .title {
+  font-family: Ivar Fine;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1e3fb5;
+}
+
+.product-desc .desc {
+  font-size: 1.2rem;
+  color: #000;
+}
+
+.product-desc .code {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.banner-title {
+  font-family: Ivar Fine;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+.banner-text {
+  font-size: 1.2rem;
+}
+
+.btns {
+  padding: 14px 28px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #1e3fb5;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* width: fit-content; */
+  cursor: pointer;
+}
+
+.banner-btn:hover {
+  border: 1px solid #1e3fb5;
+}
+
+.information {
+  margin-top: 50px;
+}
+
+.information-btn {
+  border: 1px solid #1e3fb5;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .product {
+    display: block;
+  }
+
+  .product-desc .title {
+    font-size: 2rem;
+  }
+
+  .banner-desc {
+    margin-top: 20px;
+  }
+
+  .information-btn {
+    width: 100%;
+  }
 }
